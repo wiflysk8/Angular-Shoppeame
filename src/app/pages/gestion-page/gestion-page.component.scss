@@ -1,0 +1,62 @@
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.c-gestion{
+  box-shadow: 8px -8px 12px gray;
+  display: flex;
+  background-color: white;
+  border-radius: 6px;
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__left{
+    border-right: 1px orange solid;
+    margin-left: 40px;
+    width: 50%;
+    p{
+      font-weight: bold;
+    }
+    input{
+      width: 500px;
+      height: 23px;
+      border: 1px solid black;
+      border-radius: 6px;
+    }
+    .botoncito{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 90px;
+    button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 405px;
+      margin-top: 20px;
+      width: 100px;
+      height: 30px;
+      background-color: orange;
+      color: white;
+      border-radius: 6px;
+    }
+  }
+    textarea{
+      width: 500px;
+      max-width: 500px;
+      height: 60px;
+    }
+  }
+
+  &__right{
+    &-img{
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+}

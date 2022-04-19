@@ -1,0 +1,24 @@
+<section>
+<div class= "c-gestion">
+  <div class="c-gestion__left">
+    <form (ngSubmit)="onSubmit()" [formGroup]="gestionForm">
+<p>Nombre del producto*:</p><span  *ngIf="gestionForm.controls['name'].errors">Campo oblgatorio</span>
+      <input type="text"formControlName="name" placeholder="Por ej: Tiesto para planta">
+      <p>Precio*:</p><span  *ngIf="gestionForm.controls['price'].errors">Campo oblgatorio</span>
+      <input type="number" formControlName="price" placeholder="Por ej: 9.50">
+      <p>Descripción*</p><span  *ngIf="gestionForm.controls['description'].errors">Máximo 40 caracteres</span>
+      <textarea  type="text" formControlName="description" placeholder="Por ej: Lo más vendido este mes"></textarea>
+      <p>Ruta de la imagen</p><span  *ngIf="gestionForm.controls['price'].errors">Campo oblgatorio</span>
+      <input type="text" formControlName="image" placeholder="http://blabla/img.jpg">
+      <p>Opiniones</p>
+      <input type="text" formControlName="stars" placeholder="Por ej: 4.28">
+      <div class="botoncito">
+      <button>Guardar</button>
+    </div>
+    </form>
+  </div>
+  <div class="c-gestion__right">
+    <app-product-detail [newProduct]="newProduct"></app-product-detail>
+  </div>
+</div>
+</section>

@@ -1,0 +1,35 @@
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.c-home{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 6px;
+  height:1000px;
+  width: 1235px;
+  display: flex;
+  h1{
+    text-align: center;
+    margin: 80px 0px;
+  }
+  p{
+    margin: 0px 20px;
+    margin-bottom: 40px;
+  }
+
+  h3{
+    margin: 0px 20px;
+    margin-bottom: 40px
+  }
+}
+
+.active-link{
+  color: blue;
+  font-size: 40px;
+}

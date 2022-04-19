@@ -1,0 +1,19 @@
+<div>
+<section class="c-products">
+ <div class="c-products-header">
+ <div class="c-products-header__tittle" *ngIf="products">Listado de Productos ({{products.length}})</div>
+   <div class="c-products-header__input">
+     <input type="text" placeholder="Buscador" [(ngModel)]="searchValue">
+     <button (click)="search()">Buscar</button>
+    </div>
+  </div>
+  <article class="c-products-gallery">
+  <figure class="c-products-gallery__item" *ngFor="let product of products">
+    <img src="{{product.image}}" alt="">
+    <figcaption><p>{{product.description}}</p></figcaption>
+    <figcaption class="c-products-gallery__item-price">${{product.price}}</figcaption>
+  </figure>
+  </article>
+  </section>
+</div>
+
